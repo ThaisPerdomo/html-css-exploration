@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se na feira!</title>
+
+    <!-- font-family, sendo a roboto para o corpo e a Oswald para o título  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <h1 class = "tituloprincipal">Grande feira de DJS-fruta </h1>
+
+    <div class = "descricao">
+        
+        <p class = "textoNormal" style ="display: inline-block;">Precisamos de frutinhas que <strong>realmente</strong> fervam o kissuco!</p>
+        <img src = "https://media.tenor.com/ZgbW9V5PKoMAAAAM/banana-dance-dancing-banana.gif" width="30px" style ="padding-top: 10px;"/>
+        <br/><br/><br/>
+        <p class = "textoOBS" >OBS: Não aceitamos verduras, leguminosas ou quaisquer outros alimentos que possam sujar a cena frubber. </p>
+        <p class = "textoOBS" >Tomates, querides, vocês são muito bem-vindes. Tomatefobia não será tolerada em nossa feira. </p>
+        <br/>
+
+    </div>  
+
+    <h2 class = "titulos">Faça seu cadastro</h2><br/>
+
+    <form action = "outrapagina.html" method = "GET">
+        
+        <fieldset>
+
+            <legend class = "descricaoformulario">Dados pessoais </legend>
+
+            <label>
+                Nome completo: <br/>
+                <input type = "text" name = "nome" class = "inputTexto"/>
+            </label> 
+
+            <p>Estado Civil: </p>
+                <label class="estadoCivil">
+                    <input type = "radio" name = "estadocivil" value="estacao" />
+                    Na estação
+                </label>
+
+                <label class = "estadoCivil">
+                    <input type = "radio" name = "estadocivil" value="fora" style = "margin-left: 20px";/>
+                    Fora da estação
+                </label> 
+            
+            <label>
+                Data da sua colheita: <br/>
+                <input type = "date" name ="datacolheita"/>
+            </label>
+
+            <label>
+                Aspecto atual: <br/>
+                <p class="textoRange" style="display:inline-block;padding-right: 7px;">VERDE</p> 
+                <input type = "range" name="aspecto" style="display:inline-block;">
+                <p class ="textoRange"style="display:inline-block;padding-left: 7px;">MADURA</p>
+            </label>
+
+
+        </fieldset>
+        
+        <fieldset>
+            <legend>Sua batidinha</legend>
+
+            Estilo de som: <br/>
+            <select name ="estilo" size = "1"  class = "selectEstilo">
+                <option value = "batidao">Batidão tropical</option>
+                <option value = "pasta">Pastosinho</option>
+                <option value = "mix">Mixado</option>
+                <option value = "puro">Puro e sem açúcar</option>
+            </select><br/><br/>
+
+
+            <label>
+                Nos conte mais sobre sua história contra a ditadura musical das leguminosas. <br/> 
+                <textarea name = "historia" class = "textareaAntiLeguminosa"></textarea>
+            </label>
+
+        </fieldset><br/>
+
+        <label class = "termosECondicoes">
+            <input type = "checkbox" name="condicoes"/>
+            Eu concordo com os <a href="termos.html" target = "_blank" class = "termosLink">termos e condições</a> da feirinha de Frutas DJ
+        </label><br/>
+
+        <div class="botaoEnviar">
+
+            <input type ="submit" class = "botaoEnviar" value="Finalizar cadastro">
+
+        </div><br/><br/>
+
+    </form>
+    
+</body>
+</html>
