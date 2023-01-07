@@ -21,8 +21,8 @@
         <p class = "textoNormal" style ="display: inline-block;">Precisamos de frutinhas que <strong>realmente</strong> fervam o kissuco!</p>
         <img src = "https://media.tenor.com/ZgbW9V5PKoMAAAAM/banana-dance-dancing-banana.gif" width="30px" style ="padding-top: 10px;"/>
         <br/><br/><br/>
-        <p class = "textoOBS" >OBS: Não aceitamos verduras, leguminosas ou quaisquer outros alimentos que possam sujar a cena frubber. </p>
-        <p class = "textoOBS" >Tomates, querides, vocês são muito bem-vindes. Tomatefobia não será tolerada em nossa feira. </p>
+        <p class = "textoOBS" >OBS: Não aceitamos verduras, leguminosas ou quaisquer outros alimentos que possam sujar a cena frubber.
+        Tomates, querides, vocês são muito bem-vindes. Tomatefobia não será tolerada em nossa feira. </p>
         <br/>
 
     </div>  
@@ -37,23 +37,28 @@
 
             <label>
                 Nome completo: <br/>
-                <input type = "text" name = "nome" class = "inputTexto"/>
+                <input type = "text" name = "nome" class = "inputTexto" minlength="6"/>
+            </label> 
+
+            <label>
+                Email da horta: <br/>
+                <input type = "text" name = "email" class = "inputTexto" pattern = "(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)" title = "Endereço de email" placeholder = "exemplo@exemplo.com"/>
             </label> 
 
             <p>Estado Civil: </p>
-                <label class="estadoCivil">
+                <label class="radioEstadoCivil">
                     <input type = "radio" name = "estadocivil" value="estacao" />
                     Na estação
                 </label>
 
-                <label class = "estadoCivil">
-                    <input type = "radio" name = "estadocivil" value="fora" style = "margin-left: 20px";/>
+                <label class = "radioEstadoCivil">
+                    <input type = "radio" name = "estadocivil" value="fora" style = "margin-left: 20px;"/>
                     Fora da estação
                 </label> 
             
             <label>
                 Data da sua colheita: <br/>
-                <input type = "date" name ="datacolheita"/>
+                <input type = "date" name ="datacolheita" />
             </label>
 
             <label>
@@ -69,13 +74,20 @@
         <fieldset>
             <legend>Sua batidinha</legend>
 
-            Estilo de som: <br/>
+            <p>Estilo de som:</p>
             <select name ="estilo" size = "1"  class = "selectEstilo">
                 <option value = "batidao">Batidão tropical</option>
                 <option value = "pasta">Pastosinho</option>
                 <option value = "mix">Mixado</option>
                 <option value = "puro">Puro e sem açúcar</option>
             </select><br/><br/>
+
+            <p id="textoUploadFoto">Uma imagem sua agitando tudo no mixer:</p>
+
+            <label class = "inputUploadFoto">
+                Upload<br/>
+                <input type="file" accept="image/*"/>
+            </label>
 
 
             <label>
