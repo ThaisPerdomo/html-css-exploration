@@ -84,7 +84,7 @@ input[type=text],input[type=date], select, textarea{
 }
 
 
-.inputTexto, .selectEstilo, .textareaAntiLeguminosa{
+.inputTexto, .selectRemix, .textareaAntiLeguminosa{
     width: 400px;
 }
 
