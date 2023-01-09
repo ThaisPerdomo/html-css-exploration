@@ -124,7 +124,7 @@ input[type="file"] {
 }
 
 .termosECondicoes{
-    padding-left: 20px;
+    padding-left: 3%;
 }
 
 
@@ -135,7 +135,7 @@ input[type="file"] {
 input[type=submit]{
     padding:10px;
     border: 1px solid #000;
-    margin-left: 20px;
+    margin-left: 3%;
     color:#000;
     background-color: #FFF;
     font-family: 'Oswald';
