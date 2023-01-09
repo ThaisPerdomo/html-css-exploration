@@ -168,3 +168,60 @@ footer picture{
     padding-right: 5%;
     padding-left: 1%;
 }
+
+/* Página da programação!!! */
+
+.tabelaPrimeiraSemana{
+    display:flex;
+    justify-content: center;
+}
+
+table{
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+thead{
+    font-family: "Oswald";
+    text-transform: uppercase;
+}
+
+.tituloTabela{
+    font-size: 20px;
+    border-bottom: 2px solid #000;
+}
+
+.subtituloTabela, .subtituloVazioTabela{
+    background-color:#CCC;
+}
+
+td, th {
+    margin: 0px;
+    padding: 7px;
+}
+
+.colunaHorario{
+    text-align: center;
+    font-size: small;
+    font-weight: bold;
+    
+}
+
+.conteudoTabela, .subtituloTabela{
+    max-width: 150px;
+}
+
+tbody tr:nth-child(even){
+    background-color: rgba(204, 204, 204, 0.404);
+}
+
+tbody tr:hover{
+    background-color: #7512826d;
+}
+
+.tabelaAlmoco{
+    text-align: center; 
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
