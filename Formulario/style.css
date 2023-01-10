@@ -1,4 +1,5 @@
 * {
+    margin: 0px;
     box-sizing: border-box;
 }
 
@@ -69,6 +70,16 @@ legend {
 fieldset{
     margin-bottom: 20px;
     border: 1px solid rgb(62, 62, 62);
+}
+
+.containerFormulario{
+    display:flex;
+}
+
+.itensFlexFormulario{
+    flex-direction: row;
+    flex: 1;
+    margin: 0px 2%;
 }
 
 input[type=text],input[type=date], select, textarea{
