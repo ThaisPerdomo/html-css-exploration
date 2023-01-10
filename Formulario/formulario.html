@@ -33,87 +33,89 @@
 
     </header>
     
-
-    <form action = "outrapagina.html" method = "GET" enctype="multipart/form-data">
+    <main>
+        <form action = "outrapagina.html" method = "GET" enctype="multipart/form-data">
         
-        <fieldset>
-
-            <legend class = "descricaoformulario">Dados pessoais </legend>
-
-            <label>
-                Nome completo: <br/>
-                <input type = "text" name = "nome" class = "inputTexto" minlength="6"/>
-            </label> 
-
-            <label>
-                Email da horta: <br/>
-                <input type = "text" name = "email" class = "inputTexto" pattern = "(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)" title = "Endereço de email" placeholder = "exemplo@exemplo.com"/>
-            </label> 
-
-            <p>Estado Civil: </p>
-                <label class="radioEstadoCivil">
-                    <input type = "radio" name = "estadocivil" value="estacao" checked/>
-                    Na estação
-                </label>
-
-                <label class = "radioEstadoCivil">
-                    <input type = "radio" name = "estadocivil" value="fora" style = "margin-left: 20px;"/>
-                    Fora da estação
+            <fieldset>
+    
+                <legend class = "descricaoformulario">Dados pessoais </legend>
+    
+                <label>
+                    Nome completo: <br/>
+                    <input type = "text" name = "nome" class = "inputTexto" minlength="6"/>
                 </label> 
+    
+                <label>
+                    Email da horta: <br/>
+                    <input type = "text" name = "email" class = "inputTexto" pattern = "(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)" title = "Endereço de email" placeholder = "exemplo@exemplo.com"/>
+                </label> 
+    
+                <p>Estado Civil: </p>
+                    <label class="radioEstadoCivil">
+                        <input type = "radio" name = "estadocivil" value="estacao" checked/>
+                        Na estação
+                    </label>
+    
+                    <label class = "radioEstadoCivil">
+                        <input type = "radio" name = "estadocivil" value="fora" style = "margin-left: 20px;"/>
+                        Fora da estação
+                    </label> 
+                
+                <label>
+                    Data da colheita: <br/>
+                    <input type = "date" name ="datacolheita" />
+                </label>
+    
+                <label>
+                    Aspecto atual: <br/>
+                    <p class="textoRange" style="display:inline-block;padding-right: 7px;">VERDE</p> 
+                    <input type = "range" name="aspecto" style="display:inline-block;">
+                    <p class ="textoRange"style="display:inline-block;padding-left: 7px;">MADURA</p>
+                </label>
+    
+    
+            </fieldset>
             
-            <label>
-                Data da colheita: <br/>
-                <input type = "date" name ="datacolheita" />
-            </label>
+            <fieldset>
+                <legend>Sua batidinha</legend>
+    
+                <p>Qual o seu melhor remix?</p>
+                <select name ="estilo" size = "1"  class = "selectRemix">
+                    <option value = "vodka">Com vodka</option>
+                    <option value = "cachaca">Com cachaça</option>
+                    <option value = "gin">Com gin</option>
+                    <option value = "puro">Puro e sem açúcar</option>
+                </select><br/><br/>
+    
+                <p id="textoUploadFoto">Uma imagem sua agitando tudo no mixer:</p>
+    
+                <label class = "inputUploadFoto">
+                    Upload<br/>
+                    <input type="file" accept="image/*"/>
+                </label>
+    
+    
+                <label>
+                    Nos conte mais sobre sua história contra a ditadura musical das leguminosas. <br/> 
+                    <textarea name = "historia" class = "textareaAntiLeguminosa"></textarea>
+                </label>
+    
+            </fieldset><br/>
+    
+            <label class = "termosECondicoes">
+                <input type = "checkbox" name="condicoes" checked required/>
+                Eu concordo com os <a href="termos.html" target = "_blank" class = "termosLink">termos e condições</a> da feirinha de Frutas DJs
+            </label><br/>
+    
+            <div class="botaoEnviar">
+    
+                <input type ="submit" value="Finalizar cadastro">
+    
+            </div><br/><br/>
+    
+        </form>
+    </main>
 
-            <label>
-                Aspecto atual: <br/>
-                <p class="textoRange" style="display:inline-block;padding-right: 7px;">VERDE</p> 
-                <input type = "range" name="aspecto" style="display:inline-block;">
-                <p class ="textoRange"style="display:inline-block;padding-left: 7px;">MADURA</p>
-            </label>
-
-
-        </fieldset>
-        
-        <fieldset>
-            <legend>Sua batidinha</legend>
-
-            <p>Qual o seu melhor remix?</p>
-            <select name ="estilo" size = "1"  class = "selectRemix">
-                <option value = "vodka">Com vodka</option>
-                <option value = "cachaca">Com cachaça</option>
-                <option value = "gin">Com gin</option>
-                <option value = "puro">Puro e sem açúcar</option>
-            </select><br/><br/>
-
-            <p id="textoUploadFoto">Uma imagem sua agitando tudo no mixer:</p>
-
-            <label class = "inputUploadFoto">
-                Upload<br/>
-                <input type="file" accept="image/*"/>
-            </label>
-
-
-            <label>
-                Nos conte mais sobre sua história contra a ditadura musical das leguminosas. <br/> 
-                <textarea name = "historia" class = "textareaAntiLeguminosa"></textarea>
-            </label>
-
-        </fieldset><br/>
-
-        <label class = "termosECondicoes">
-            <input type = "checkbox" name="condicoes" checked required/>
-            Eu concordo com os <a href="termos.html" target = "_blank" class = "termosLink">termos e condições</a> da feirinha de Frutas DJs
-        </label><br/>
-
-        <div class="botaoEnviar">
-
-            <input type ="submit" value="Finalizar cadastro">
-
-        </div><br/><br/>
-
-    </form>
 
     <footer>
 
