@@ -74,10 +74,11 @@ fieldset{
 
 .containerFormulario{
     display:flex;
+    flex-direction: row;
+
 }
 
 .itensFlexFormulario{
-    flex-direction: row;
     flex: 1;
     margin: 0px 2%;
 }
