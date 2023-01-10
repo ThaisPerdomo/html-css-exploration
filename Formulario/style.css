@@ -58,29 +58,39 @@ label{
     margin-bottom: 20px;
 }
 legend {
+    display:none;
+}
+
+.descricaoFormulario{
+    width:max-content;
     padding: 10px;
     font-family: 'Oswald';
     text-transform: uppercase;
     background-color: rgb(62, 62, 62);
     color:#FFF;
-    margin-bottom: 10px;
-
-}
-
-fieldset{
-    margin-bottom: 20px;
-    border: 1px solid rgb(62, 62, 62);
+    position: relative;
+    top: -25px;
 }
 
 .containerFormulario{
+    padding-top: 20px;
     display:flex;
     flex-direction: row;
+    align-items: stretch;
 
+    
 }
 
 .itensFlexFormulario{
     flex: 1;
     margin: 0px 2%;
+    border: 1px solid rgb(62, 62, 62);
+
+}
+
+fieldset{
+    margin: 0px;
+    border: 0px solid rgb(62, 62, 62);
 }
 
 input[type=text],input[type=date], select, textarea{
@@ -127,7 +137,6 @@ input[type="file"] {
 /* ------------------------------- */
 
 .textareaAntiLeguminosa{
-    height: 100px;
     margin: 5px 0px 5px 0px;
     resize: none;
 }
