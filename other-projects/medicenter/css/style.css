@@ -1,0 +1,19 @@
+:root{
+    --largura-padrao: 990px;
+}
+
+header {
+    display:flex;
+    justify-content: center;
+
+}
+
+.containerPadrao{
+    display: flex;
+    justify-content: space-between;
+    background-color: aquamarine;
+    width: var(--largura-padrao);
+}
+
+body {
+}
