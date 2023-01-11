@@ -10,7 +10,6 @@
 }
 
 body {
-    padding: 3%;
     font-family: "Roboto Condensed";
 }
 
@@ -19,6 +18,7 @@ header {
     justify-content: center;
     height: 80px;
     text-transform: uppercase;
+    padding: 70px;
 
 }
 
@@ -90,6 +90,54 @@ nav a{
     /* Isso adiciona uma cor diferente na página atual (que é definida por uma class no HTML) e quando se passa o mouse etc */
 }
 
+/* ----------Aqui a parte do banner------------ */
+
+
+
+#bannerHome{
+    background-image:url("../images/backgroundHome.png");
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.containerBanner{
+    width: var(--largura-padrao);   
+}
+
+mark{
+    background-color: var(--primeira-cor);
+    text-transform: uppercase;
+    line-height: 1.4;
+}
+
+.containerTextoBanner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 500px;
+}
+
+.textoBanner{
+    flex:1;
+    padding: 5%;
+    font-family: "Oswald";
+
+}
+
+.fraseBanner mark{
+    letter-spacing: 1px;
+}
+
+blockquote mark{
+    font-weight: bold;
+}
+
+
+
+
 /* -------- MAIORIA ABAIXO DA PÁGINA FORMULARIO ------------ */
 
 .textoNormal {
@@ -122,6 +170,7 @@ nav a{
 
 h1 {
     letter-spacing: 4px;
+    margin: 0px;
 }
 
 h2 {
