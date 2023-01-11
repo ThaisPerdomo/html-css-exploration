@@ -1,3 +1,9 @@
+:root{
+    --largura-padrao: 900px;
+    --primeira-cor:#FFCA3A;
+    --segunda-cor:#0063A6;
+}
+
 * {
     margin: 0px;
     box-sizing: border-box;
@@ -7,6 +13,84 @@ body {
     padding: 3%;
     font-family: "Roboto Condensed";
 }
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    text-transform: uppercase;
+
+}
+
+/* ----- AQUI FICA O LOGOTIPO ------  */
+
+.containerHeader{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: var(--primeira-cor); */
+    width: var(--largura-padrao);
+}
+
+.logotipo{
+    display:flex;
+    align-items: center;
+    font-family: "Oswald";
+}
+
+
+.containerTextologo{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.tituloLogo{
+    font-size: 45px;
+    font-weight: bold;
+    color: var(--segunda-cor);
+}
+
+.subtituloLogo{
+    font-size: 15px;
+    color: #000;
+
+}
+
+/* ----- AGORA VEM A PARTE DO MENU ---------- */
+
+.containerMenu{
+    display: flex;
+    align-items: center;
+    position:relative;
+    right: 30px;
+}
+
+nav ul, nav li{
+    list-style: none;
+    margin: 0px;
+    padding:0px;
+}
+
+nav ul{
+    display:flex;
+}
+
+nav a{
+    display:block;
+    /* essa configuração aqui faz com que voce consiga colocar um padding nos itens do menu */
+    padding:15px;
+    text-decoration: none;
+    /* Isso tira a linha azul que fica em volta do link */
+    color:#000;
+    font-weight: bold;
+}
+
+.paginaAtual, nav a:hover{
+    color: var(--segunda-cor);
+    /* Isso adiciona uma cor diferente na página atual (que é definida por uma class no HTML) e quando se passa o mouse etc */
+}
+
+/* -------- MAIORIA ABAIXO DA PÁGINA FORMULARIO ------------ */
 
 .textoNormal {
     padding: 5px 0px 10px 20px;
@@ -171,25 +255,25 @@ input[type=submit]:hover{
     
 }
 
-footer {
+.quaseRodape {
     font-family: "Oswald";
     text-transform: uppercase;
     text-align: right;
 }
 
-footer p {
+.quaseRodape p {
     display: inline-block;
     padding-left: 5%;
 
 }
 
-footer picture{
+.quaseRodape picture{
     vertical-align: middle;
     padding-right: 5%;
     padding-left: 1%;
 }
 
-/* Página da programação!!! */
+/* ------------ Página da programação!!!----------- */
 
 .tabelaPrimeiraSemana{
     display:flex;
