@@ -104,7 +104,7 @@ input[type=text],input[type=date], select, textarea{
 
 
 .inputTexto, .selectRemix, .textareaAntiLeguminosa{
-    width: 400px;
+    width: 100%;
 }
 
 /* Mudando o padrão do input file:  */
@@ -139,6 +139,8 @@ input[type="file"] {
 .textareaAntiLeguminosa{
     margin: 5px 0px 5px 0px;
     resize: none;
+    height: 180px;
+
 }
 
 .termosECondicoes{
