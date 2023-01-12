@@ -85,14 +85,40 @@ nav a{
     font-weight: bold;
 }
 
+nav a:active{
+    color: var(--primeira-cor);
+}
+
 .paginaAtual, nav a:hover{
     color: var(--segunda-cor);
     /* Isso adiciona uma cor diferente na página atual (que é definida por uma class no HTML) e quando se passa o mouse etc */
 }
 
+nav a:active{
+    color: var(--primeira-cor);
+    transition: 0.2s
+}
+
+.logotipo:hover{
+    opacity: 80%;
+    transition: 2s;
+}
+
+
+
 /* ----------Aqui a parte do banner------------ */
 
-
+@keyframes animacaoBanner {
+    from {
+        transform: translateX(-10%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+  
+  }
 
 #bannerHome{
     background-image:url("../images/backgroundHome.png");
@@ -104,7 +130,7 @@ nav a{
 }
 
 .containerBanner{
-    width: var(--largura-padrao);   
+    width: var(--largura-padrao);
 }
 
 mark{
@@ -118,6 +144,7 @@ mark{
     flex-direction: row;
     align-items: center;
     height: 500px;
+    animation: animacaoBanner 3s 1;
 }
 
 .textoBanner{
@@ -132,10 +159,8 @@ mark{
 }
 
 blockquote mark{
-    font-weight: bold;
+    font-weight: bold;;
 }
-
-
 
 
 /* -------- MAIORIA ABAIXO DA PÁGINA FORMULARIO ------------ */
