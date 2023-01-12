@@ -1,7 +1,9 @@
 :root{
-    --largura-padrao: 900px;
+    --largura-padrao: 1000px;
     --primeira-cor:#FFCA3A;
     --segunda-cor:#0063A6;
+    --primeira-cor-mais-clara: #ffca3ab8;
+    --segunda-cor-mais-clara: #0064a67c;
 }
 
 * {
@@ -27,7 +29,6 @@ header {
 .containerHeader{
     display: flex;
     justify-content: space-between;
-    /* background-color: var(--primeira-cor); */
     width: var(--largura-padrao);
 }
 
@@ -96,7 +97,7 @@ nav a:active{
 
 nav a:active{
     color: var(--primeira-cor);
-    transition: 0.2s
+    transition: 0.4s
 }
 
 .logotipo:hover{
@@ -163,6 +164,80 @@ blockquote mark{
 }
 
 
+/* Abaixo, é referente ao conteúdo da página principal */
+#corpoHome{
+    display: flex;
+    justify-content: center;
+}
+
+.containerCorpo{
+    width: var(--largura-padrao);
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+
+}
+
+#containerNoticias{
+    flex: 2;
+}
+
+#corpoHome aside{
+    flex: 1;
+    height:300px;
+
+}
+
+#containerNoticias, #containerAside{
+    margin: 10px;
+}
+
+#containerAside{
+    display: flex;
+    flex-direction: column;
+}
+
+.boxAside{
+    margin-bottom:30px;
+}
+
+.tituloBoxes{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+aside .tituloBoxes{
+    background-color: var(--primeira-cor-mais-clara);
+}
+
+#containerNoticias .tituloBoxes{
+    background-color: var(--segunda-cor-mais-clara);
+}
+
+.fundoCinzaBoxes{
+    background-color: rgba(204, 204, 204, 0.144);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 20px;
+    text-align: justify;
+}
+
+
+
+
+
+
+.fundoCinzaBoxes #imagemDiretor{
+    width: 100%;
+}
+
+#textoQuemSomos figcaption{
+    text-align: center;
+}
+
 /* -------- MAIORIA ABAIXO DA PÁGINA FORMULARIO ------------ */
 
 .textoNormal {
@@ -199,9 +274,12 @@ h1 {
 }
 
 h2 {
-
-    letter-spacing: 2px;
+    margin:0;
+    padding: 0;
+    letter-spacing: 1px;
     font-size: 20px;
+    text-transform: uppercase;
+    font-family: "Oswald";
 }
 
 /* Formulario  */
