@@ -8,23 +8,18 @@ function insereNoticiaDoJson(classTitulo, classTexto){
     let htmlTitulo = document.querySelectorAll(classTitulo);
     let htmlTexto = document.querySelectorAll(classTexto);
 
-    fetch('jsons/noticias.json')
-    .then(res => res.json())
-    .then(noticia => {
+    fetch('jsons/noticias.json').then(res => res.json()).then(noticia => {
 
             if (htmlTexto.length < noticia.length || htmlTitulo.length < noticia.length){
-
                 console.log("O número de notícias no arquivo .json é maior que o número de elementos no HTML. Favor inserir mais.");
-            
+
             } else {
 
                 for(i = 0; i < noticia.length; i++){
                     htmlTitulo[i].innerHTML = noticia[i].titulo;
                     htmlTexto[i].innerHTML = noticia[i].texto;
                 }
-
             }
-            
         })
 }
 
