@@ -195,6 +195,7 @@ blockquote mark{
 #containerAside{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .boxAside{
@@ -213,6 +214,17 @@ aside .tituloBoxes{
     background-color: var(--primeira-cor-mais-clara);
 }
 
+.linksContato{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 20px;
+}
+
+.linksContato a:hover{
+    opacity: 70%;
+    transition: 0.8s;
+}
+
 #containerNoticias .tituloBoxes{
     background-color: var(--segunda-cor-mais-clara);
 }
@@ -225,10 +237,40 @@ aside .tituloBoxes{
     text-align: justify;
 }
 
+article{
+    display:flex;
+    margin: 10px;
+}
 
+.separadorNoticias{
+    border-bottom: solid 1px rgba(165, 165, 165, 0.629);
+    margin: 20px 0px 20px 0px;
+}
 
+.boxFotoNoticia{
+    flex: 1;
+}
 
+.fotoNoticia{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
+.boxNoticia{
+    flex: 2;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.tituloNoticia{
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
 
 .fundoCinzaBoxes #imagemDiretor{
     width: 100%;
