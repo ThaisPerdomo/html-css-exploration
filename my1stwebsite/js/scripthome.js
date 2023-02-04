@@ -2,8 +2,8 @@
  * A função abaixo insere as noticias do arquivo json na pasta. 
  * Precisa ter, no HTML, os seguintes elementos: divs para título, divs para texto e img para imagem com o src vazio.
  * Os parâmetros da função são os nomes das classes dos elementos do HTML.
- * Importante ressaltar que deve ter, no mínimo, o mesmo número de elementos que o número de notícias no arquivo .json. 
- * Se tiver menos, vai exibir no console log que tem menos e não vai colocar as notícias na página
+ * Importante ressaltar que deve ter, >no mínimo<, o mesmo número de elementos que o número de notícias no arquivo .json. 
+ * Se tiver menos, vai exibir no console log que tem menos e não vai colocar as notícias na página. Se tiver mais, não faz mal
  */
 function insereNoticiaDoJson(classTitulo, classTexto, classImagem){
     let htmlTitulo = document.querySelectorAll(classTitulo);
