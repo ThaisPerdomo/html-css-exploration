@@ -294,6 +294,34 @@ article{
     line-height: 1.5;
 }
 
+/********* ABAIXO, É REFERENTE AO banner das paginas sem ser home **********/
+
+#bannerPaginas{
+    background-image:url("../images/backgroundTermos.png");
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+#bannerPaginas .containerTextoBanner{
+    animation: fadeIn 2s;
+
+}
+
+#bannerPaginas .textoBanner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* -------- MAIORIA ABAIXO DA PÁGINA FORMULARIO ------------ */
 
 .textoNormal {
@@ -538,30 +566,7 @@ tbody tr:hover{
 
 /* Abaixo, é referente aos termos e condições */
 
-#bannerTermos{
-    background-image:url("../images/backgroundTermos.png");
-    background-position: center;
-    background-size: cover;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-
-#bannerTermos .containerTextoBanner{
-    animation: fadeIn 2s;
-
-}
-
-#bannerTermos .textoBanner{
-    display: flex;
-    justify-content: center;
-}
 .containerMasterTermosECondicoes{
     display: flex;
     flex-direction: column;
