@@ -230,7 +230,7 @@ aside .tituloBoxes{
 }
 
 .fundoCinzaBoxes{
-    background-color: rgba(204, 204, 204, 0.144);
+    background-color: #FAFAFA;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     padding: 20px;
@@ -240,6 +240,7 @@ aside .tituloBoxes{
 article{
     display:flex;
     margin: 10px;
+    align-items: center;
 }
 
 .separadorNoticias{
@@ -253,7 +254,7 @@ article{
 
 .fotoNoticia{
     width: 100%;
-    height: 100%;
+    min-width: 180px;
     opacity: 85%;
     object-fit: cover;
 }
@@ -280,6 +281,17 @@ article{
 
 #textoQuemSomos figcaption{
     text-align: center;
+}
+
+/********* ABAIXO, É REFERENTE AO RODAPÉ **********/
+
+.rodape{
+    background-color: var(--segunda-cor);
+    color: white;
+    padding: 20px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.5;
 }
 
 /* -------- MAIORIA ABAIXO DA PÁGINA FORMULARIO ------------ */
@@ -435,7 +447,6 @@ input[type="file"] {
 input[type=submit]{
     padding:10px;
     border: 1px solid #000;
-    margin-left: 3%;
     color:#000;
     background-color: #FFF;
     font-family: 'Oswald';
@@ -525,3 +536,75 @@ tbody tr:hover{
     text-transform: uppercase;
 }
 
+/* Abaixo, é referente aos termos e condições */
+
+#bannerTermos{
+    background-image:url("../images/backgroundTermos.png");
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+#bannerTermos .containerTextoBanner{
+    animation: fadeIn 2s;
+
+}
+
+#bannerTermos .textoBanner{
+    display: flex;
+    justify-content: center;
+}
+.containerMasterTermosECondicoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerDosTermosECondicoes{
+    width: var(--largura-padrao);
+    display: flex; 
+    justify-content: center;
+}
+
+.containerDosTermosECondicoes .tituloBoxes{
+    background-color: var(--segunda-cor-mais-clara);
+}
+
+.containerInternoTermosECondicoes{
+    padding: 20px;
+    width: 550px;
+}
+
+.containerBoxTermosECondicoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxTermosECondicoes{
+    overflow-y:scroll; 
+    width:100%; 
+    height:450px; 
+    text-align: justify;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+ 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
