@@ -324,25 +324,12 @@ article{
 
 /* -------- MAIORIA ABAIXO DA PÁGINA FORMULARIO ------------ */
 
-.textoNormal {
-    padding: 5px 0px 10px 20px;
-
-}
-
-.tituloprincipal {
-    font-family: 'Oswald', Arial;
-    border-bottom: 1px solid #000;
-    padding: 10px 0px 10px 20px;
-    text-transform: uppercase;
-
-}
-
-.titulos {
-    font-family: 'Oswald', Arial;
-    border-bottom: 1px solid #000;
-    padding: 10px 0px 10px 20px;
-    text-transform: uppercase;
-
+.tituloAvulso{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--segunda-cor);
 }
 
 .textoOBS {
@@ -380,32 +367,28 @@ label{
 legend {
     display:none;
 }
-
-.descricaoFormulario{
-    width:max-content;
-    padding: 10px;
-    font-family: 'Oswald';
-    text-transform: uppercase;
-    background-color: rgb(62, 62, 62);
-    color:#FFF;
-    position: relative;
-    top: -25px;
-}
-
 .containerFormulario{
-    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.containerFormularioFlex{
+    width: var(--largura-padrao);
     display:flex;
     flex-direction: row;
-    align-items: stretch;
-
-    
 }
 
 .itensFlexFormulario{
     flex: 1;
     margin: 0px 2%;
-    border: 1px solid rgb(62, 62, 62);
     padding: 8px;
+}
+
+.itensFlexFormulario .fundoCinzaBoxes{
+    height: 85%;
+}
+
+.itensFlexFormulario .tituloBoxes{
+    background-color: var(--segunda-cor-mais-clara);
 }
 
 fieldset{
@@ -457,14 +440,16 @@ input[type="file"] {
 /* ------------------------------- */
 
 .textareaAntiLeguminosa{
-    margin: 5px 0px 5px 0px;
+    margin: 5px 0px 0px 0px;
     resize: none;
-    height: 180px;
+    height: 150px;
 
 }
 
-.termosECondicoes{
-    padding-left: 3%;
+.termosECondicoesFormulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -490,23 +475,6 @@ input[type=submit]:hover{
     
 }
 
-.quaseRodape {
-    font-family: "Oswald";
-    text-transform: uppercase;
-    text-align: right;
-}
-
-.quaseRodape p {
-    display: inline-block;
-    padding-left: 5%;
-
-}
-
-.quaseRodape picture{
-    vertical-align: middle;
-    padding-right: 5%;
-    padding-left: 1%;
-}
 
 /* ------------ Página da programação!!!----------- */
 
