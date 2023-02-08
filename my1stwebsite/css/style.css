@@ -162,7 +162,7 @@ mark{
 }
 
 blockquote mark{
-    font-weight: bold;;
+    font-weight: bold;
 }
 
 
@@ -664,10 +664,21 @@ tbody tr:hover{
     .contato{
         min-width: 200px;
     }
-    
+
     #bannerHome, .containerTextoBanner{
         height: 300px;
     }
+
+    .textoBanner h1 {
+        font-size: 25px;
+    }
+
+    .textoBanner blockquote{
+        font-size: 15px;
+    }
+    
+
+
 }
 
 
