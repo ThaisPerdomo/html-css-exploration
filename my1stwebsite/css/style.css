@@ -36,6 +36,7 @@ header {
     display:flex;
     align-items: center;
     font-family: "Oswald";
+    flex: 1;
 }
 
 
@@ -64,6 +65,7 @@ header {
     align-items: center;
     position:relative;
     right: 30px;
+    flex: 1
 }
 
 nav ul, nav li{
@@ -174,7 +176,7 @@ blockquote mark{
     width: var(--largura-padrao);
     display: flex;
     flex-direction: row;
-    padding-top: 10px;
+    padding: 10px;
 
 }
 
@@ -190,6 +192,7 @@ blockquote mark{
 
 #containerNoticias, #containerAside{
     margin: 10px;
+    max-width: 730px;
 }
 
 #containerAside{
@@ -591,3 +594,80 @@ tbody tr:hover{
 ::-webkit-scrollbar-thumb {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
+
+
+@media (max-width:900px) {
+
+    .tituloLogo{
+        font-size: 25px;
+        font-weight: bold;
+        color: var(--segunda-cor);
+    }
+
+    .subtituloLogo{
+        font-size: 13px;
+    }
+
+    .logotipo{
+        margin-right: 50px;
+    }
+
+    nav li {
+        font-size: 13px;
+    }
+
+    .logotipo img{
+        width: 50px;
+    }
+
+    header {
+        padding: 50px;
+    }
+
+    .containerCorpo{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #containerNoticias{
+        flex:none;
+    }
+
+    #containerAside{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #textoQuemSomos{
+        display: flex;
+        padding: 0px 5px;
+    }
+
+    #quemSomosContainerInterno1{
+        padding: 0px 5px;
+        flex: 1;
+        position: relative;
+        top: 10px;
+        align-self: center;
+    }
+
+    figcaption{
+        font-size: 12px;
+    }
+
+    #quemSomosContainerInterno2{
+        padding: 20px;
+        flex: 3;
+    }
+
+    .contato{
+        min-width: 200px;
+    }
+    
+    #bannerHome, .containerTextoBanner{
+        height: 300px;
+    }
+}
+
+
