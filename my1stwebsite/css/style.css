@@ -683,7 +683,6 @@ tbody tr:hover{
 
 @media (min-width: 700px) and (max-width:900px){
     .tituloNoticia{
-        font-size: 20px;
         margin-bottom: 20px;
     }
 
