@@ -1,3 +1,9 @@
-# Hey, over there!
+### Hello, again! (en)
 
-This is one of my first repositories, created exclusively for HTML/CSS experiments. Here, I'll be sharing some of what I've been learning. Be my guest and take a look. :information_desk_person:
+This is my very first original website! Created exclusively for HTML/CSS experiments. The whole site is about a fictional event that pretends that fruits are DJs. Yeah, I took it very seriously.
+
+
+
+### Olá, de novo! 
+
+Esse é o meu primeiro site original! Criado exclusivamente pra experimentos com HTML e CSS.  O site inteiro é sobre um evento fictício que faz de conta que frutas são DJs. É, eu fiz isso com muita seriedade. 
