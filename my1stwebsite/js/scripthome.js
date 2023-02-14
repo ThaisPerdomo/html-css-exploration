@@ -29,5 +29,27 @@ function insereNoticiaDoJson(classTitulo, classTexto, classImagem){
 insereNoticiaDoJson(".tituloNoticia", ".textoNoticia", ".fotoNoticia");
 
 
+/** Abaixo, vai ser referente ao botão de scroll Up. 
+ * Lá no CSS, o botão está com display none e tem uma classe .tornarVisivel que muda o display pra display:block */
 
+const botaoScrollUp = document.querySelector(".scrollUp");
 
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 200){
+        botaoScrollUp.classList.add("tornarVisivel");
+    } else {
+        botaoScrollUp.classList.remove("tornarVisivel");
+    }
+});
+
+/** Abaixo, a função de clique que joga a pessoa de volta pro inicio da pagina*/
+botaoScrollUp.addEventListener("click", () => {
+    /**Aqui poderia estar escrito assim: 
+    window.scrollTo(0, 0); 
+    mas o código abaixo faz a página ir para o início de forma SUAVE //*/
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+    });
+});

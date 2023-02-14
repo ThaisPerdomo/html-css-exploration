@@ -166,6 +166,30 @@ blockquote mark{
 }
 
 
+/* ----------Aqui a parte da div do scroll pra cima------------ */
+
+.scrollUp{
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    cursor: pointer;
+    background-color: #ffffffb3;
+    border-radius: 45px;
+    transition: 0.5s;
+    z-index: 999;
+    display:none;
+    
+}
+
+.tornarVisivel{
+    display: block;
+}
+
+.scrollUp:hover{
+    background-color: #fff;
+    transition: 0.5s;
+}
+
 /* Abaixo, é referente ao conteúdo da página principal */
 #corpoHome{
     display: flex;
