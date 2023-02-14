@@ -479,9 +479,16 @@ input[type="file"] {
     align-items: center;
 }
 
+@keyframes pisca {
+    0% { color: aqua;}
+    20% { color: rgb(184, 202, 15);}
+    40% { color: blue;}
+    100% { color: rgb(204, 53, 53);}
+}
 
 .termosLink{
     color:#000;
+    animation: pisca 1s infinite;
 }
 
 input[type=submit]{
