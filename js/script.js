@@ -61,13 +61,18 @@ const mensagemCadastro = document.querySelector(".containerMsgCadastro");
 
 botaoFormulario.addEventListener("click", () => {
 
-    const nomeDaFruta = document.querySelector("#inputNome").value;
+    const nomeDaFruta = document.querySelector("#inputNome");
     const textoMsgCadastro = document.querySelector("#textoMsgCadastro");
     const selectRemix = document.querySelector(".selectRemix").value;
 
     if (nomeDaFruta !== ""){
         mensagemCadastro.classList.add("tornarVisivel");
-        textoMsgCadastro.innerHTML = `Obrigado por se cadastrar, ${nomeDaFruta}! <br><br> PS: Nós amamos um suquinho com ${selectRemix} ;) <br><br> Em breve retornaremos com mais informações!<br>`;
+        textoMsgCadastro.innerHTML = `Obrigado por se cadastrar, ${nomeDaFruta.value}! <br><br> PS: Nós amamos um suquinho com ${selectRemix} ;) <br><br> Em breve retornaremos com mais informações!<br>`;
+        mensagemCadastro.addEventListener("click", () => {
+            mensagemCadastro.classList.remove("tornarVisivel");
+            nomeDaFruta.value = "";
+        
+        }); 
     } else {
         alert("Por favor, preencha o formulário");
     }
@@ -76,6 +81,3 @@ botaoFormulario.addEventListener("click", () => {
 
 })
 
-mensagemCadastro.addEventListener("click", () => {
-    mensagemCadastro.classList.remove("tornarVisivel");
-}); 
