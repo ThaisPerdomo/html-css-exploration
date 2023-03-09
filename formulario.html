@@ -14,7 +14,7 @@
 
 </head>
 <body>
-
+    
     <header>
         <div class = "containerHeader">
             <div class = "logotipo">
@@ -59,7 +59,7 @@
     
     <main>
         
-        <form action = "outrapagina.html" method = "GET" enctype="multipart/form-data">
+        <form>
             
             <div class = "containerFormulario">
                 <div class = "containerFormularioFlex">
@@ -70,12 +70,12 @@
                         <fieldset class = "fundoCinzaBoxes">
                             <label>
                                 Nome completo: <br/>
-                                <input type = "text" name = "nome" class = "inputTexto" minlength="6"/>
+                                <input type = "text" name = "nome" class = "inputTexto" minlength="6" id = "inputNome"/>
                             </label><br/> 
                 
                             <label>
                                 Email da horta: <br/>
-                                <input type = "text" name = "email" class = "inputTexto" pattern = "(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)" title = "Endereço de email" placeholder = "exemplo@exemplo.com"/>
+                                <input type = "text" name = "email" class = "inputTexto" pattern = "(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)" title = "Endereço de email" placeholder = "exemplo@exemplo.com" id = "inputEmail"/>
                             </label> <br/> 
                 
                             <p>Estado Civil: </p>
@@ -111,7 +111,7 @@
                                 <option value = "vodka">Com vodka</option>
                                 <option value = "cachaca">Com cachaça</option>
                                 <option value = "gin">Com gin</option>
-                                <option value = "puro">Puro e sem açúcar</option>
+                                <option value = "pureza">Puro e sem açúcar</option>
                             </select><br/><br/><br/> 
                 
                             <p id="textoUploadFoto">Uma imagem sua agitando tudo no mixer:</p>
@@ -132,7 +132,7 @@
 
                 </div>
             </div>
-
+        </form>
             <div class = "termosECondicoesFormulario">
                 
                 <label>
@@ -141,15 +141,26 @@
                 </label><br/>
                 <div class="botaoEnviar">
         
-                    <input type ="submit" value="Finalizar cadastro">
+                    <button id = "botaoFormulario">Finalizar cadastro</button>
         
                 </div><br/><br/>
 
 
             </div>
-        </form>
+        
+
     </main>
 
+    <div class = "containerMsgCadastro">
+        <div id = "containerMsgCadastro2">
+            <div id = "mensagemCadastro">
+                <h2 class = "tituloAvulso">Cadastro finalizado</h2><br/>
+                <p id = "textoMsgCadastro"></p> <br/> 
+                <p id = "textoMsgCadastro2"></p>
+            </div>
+        </div>
+    </div>
+    
     <footer>
         <hr/>
         <div class = "rodape"><p> Este é o primeiro site desenvolvido por Thais Perdomo &copy; </p>

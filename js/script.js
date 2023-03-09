@@ -53,3 +53,29 @@ botaoScrollUp.addEventListener("click", () => {
         behavior: "smooth"
     });
 });
+
+
+const botaoFormulario = document.querySelector("#botaoFormulario");
+
+const mensagemCadastro = document.querySelector(".containerMsgCadastro");
+
+botaoFormulario.addEventListener("click", () => {
+
+    const nomeDaFruta = document.querySelector("#inputNome").value;
+    const textoMsgCadastro = document.querySelector("#textoMsgCadastro");
+    const selectRemix = document.querySelector(".selectRemix").value;
+
+    if (nomeDaFruta !== ""){
+        mensagemCadastro.classList.add("tornarVisivel");
+        textoMsgCadastro.innerHTML = `Obrigado por se cadastrar, ${nomeDaFruta}! <br><br> PS: Nós amamos um suquinho com ${selectRemix} ;) <br><br> Em breve retornaremos com mais informações!<br>`;
+    } else {
+        alert("Por favor, preencha o formulário");
+    }
+    
+
+
+})
+
+mensagemCadastro.addEventListener("click", () => {
+    mensagemCadastro.classList.remove("tornarVisivel");
+}); 
